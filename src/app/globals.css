@@ -7,13 +7,14 @@
   --text-primary: #3E2A1F;
   --text-secondary: #7A5A4B;
 
-  --accent-main: #C88A5A;
-  --hover-main: #B06F42;
+  --accent: #C88A5A;
+  --hover-accent: #B06F42;
+
+  --wood: #DAB88B; 
+  --hover-wood: #C4A071;
 
   --border: #E2D4C6;
   --shadow: rgba(62, 42, 31, 0.08);
-
-  --wood: #DAB88B; 
 }
 
 @theme inline {
@@ -23,14 +24,14 @@
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
 
-  --color-accent-main: var(--accent-main);
-  --color-hover-main: var(--hover-main);
+  --color-accent: var(--accent);
+  --color-hover-accent: var(--hover-accent);
 
+  --color-wood: var(--wood);
+  --color-hover-wood:  var(--hover-wood);
 
   --color-border: var(--border);
   --color-shadow: var(--shadow);
-
-  --color-wood:var(--wood);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -44,18 +45,19 @@
     --text-primary: #F5EDE2;
     --text-secondary: #CBB79B;
 
-    --accent-main: #C87E4A;
-    --hover-main: #DF9B6A;
+    --accent: #C87E4A;
+    --hover-accent: #DF9B6A;
+
+    --wood: #5E3F2B; 
+    --hover-wood: #78563E;
 
     --border: #4E3B2C;
     --shadow: rgba(0, 0, 0, 0.5);
-
-    --wood: #5E3F2B; 
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-primary);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
 }

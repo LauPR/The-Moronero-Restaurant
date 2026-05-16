@@ -1,3 +1,4 @@
+import Button from "../ui/Button";
 
 export default function Header() {
     return (
@@ -8,6 +9,8 @@ export default function Header() {
             ">
 
             <h1>The Moronero Restaurant</h1>
+
+            <Button text="snfjwnkjn" variant={"secondary"}/>
 
         </header>
     )
