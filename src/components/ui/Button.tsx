@@ -31,6 +31,8 @@ export default function Button(
                     "cursor-pointer",
                     "text-center",
                     "p-4",
+                    "border",
+                    "border-border",
                     classname,
                     variants[variant],
                     sizes[size]

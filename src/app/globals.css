@@ -37,23 +37,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-primary: #211A15;
-    --bg-secondary: #2F261F;
+.dark {
+  --bg-primary: #211A15;
+  --bg-secondary: #2F261F;
 
-    --text-primary: #F5EDE2;
-    --text-secondary: #CBB79B;
+  --text-primary: #F5EDE2;
+  --text-secondary: #CBB79B;
 
-    --accent: #C87E4A;
-    --hover-accent: #DF9B6A;
+  --accent: #C87E4A;
+  --hover-accent: #DF9B6A;
 
-    --wood: #5E3F2B; 
-    --hover-wood: #78563E;
+  --wood: #5E3F2B; 
+  --hover-wood: #78563E;
 
-    --border: #4E3B2C;
-    --shadow: rgba(0, 0, 0, 0.5);
-  }
+  --border: #4E3B2C;
+  --shadow: rgba(0, 0, 0, 0.5);
 }
 
 body {

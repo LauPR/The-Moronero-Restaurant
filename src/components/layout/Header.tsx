@@ -1,16 +1,15 @@
 import Button from "../ui/Button";
+import ThemeToggle from "../ui/ThemeToggle";
 
 export default function Header() {
     return (
         <header
             className="
                 bg-bg-secondary 
-                h-16
             ">
 
-            <h1>The Moronero Restaurant</h1>
-
-            <Button text="snfjwnkjn" variant={"secondary"}/>
+            <h2>The Moronero Restaurant</h2>
+            <ThemeToggle/>
 
         </header>
     )
