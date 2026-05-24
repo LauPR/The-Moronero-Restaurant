@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Button from "./Button";
+import { Moon, Sun } from 'lucide-react';
 
 export default function ThemeToggle() {
 
@@ -32,7 +33,13 @@ export default function ThemeToggle() {
         }
     }
 
-    return(
-        <Button onClick={toggleTheme}/>
+    return (
+        <div>
+            <Button
+            onClick={toggleTheme}
+            icon={isDark ? <Sun /> : <Moon />}
+            size="sm"
+            />
+        </div>
     )
 }

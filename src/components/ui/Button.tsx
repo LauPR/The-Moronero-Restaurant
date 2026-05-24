@@ -30,7 +30,7 @@ export default function Button(
                 className={cn(
                     "cursor-pointer",
                     "text-center",
-                    "p-4",
+                    "p-1",
                     "border",
                     "border-border",
                     classname,
