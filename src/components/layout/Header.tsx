@@ -1,4 +1,4 @@
-import Button from "../ui/Button";
+import Image from "next/image";
 import ThemeToggle from "../ui/ThemeToggle";
 
 export default function Header() {
@@ -6,16 +6,23 @@ export default function Header() {
         <header
             className="bg-bg-secondary">
 
-            <div>
+            <div className="container flex mx-auto py-2 justify-between items-center">
 
-                <div>
-                    <h2>The Moronero Restaurant</h2>
+                <div className="flex items-center gap-3">
+                    <Image
+                        src="/icon.png"
+                        alt="Restaurant icon"
+                        width={40}
+                        height={40}
+                        className="rounded-full"
+                    />
+                    <h2 className="font-bold">The Moronero Restaurant</h2>
                 </div>
 
-                <div>
+                <div className="flex items-center">
                     <ThemeToggle/>
                 </div>
-                
+
             </div>
 
         </header>
