@@ -30,7 +30,8 @@ export default function ThemeToggle() {
             onClick={toggleTheme}
             icon={isDark ? <Sun /> : <Moon />}
             size="sm"
-            className={"bg-transparent hover:bg-transparent border-none"}
+            variant="empty"
+            className="border-none"
             />
         </div>
     )

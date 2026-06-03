@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 type ButtonProps = {
     text?: string;
     icon?: React.ReactNode;
-    variant?: 'primary' | 'secondary';
+    variant?: 'primary' | 'secondary' | 'empty';
     size?: 'sm' | 'md' | 'lg';
     className?: React.ReactNode;
     onClick?: () => void;
@@ -15,7 +15,8 @@ export default function Button(
 
     const variants = {
         primary: "bg-accent hover:bg-hover-accent",
-        secondary: "bg-wood hover:bg-hover-wood"
+        secondary: "bg-wood hover:bg-hover-wood",
+        empty: ""
     }
 
     const sizes = {
@@ -33,6 +34,10 @@ export default function Button(
                     "p-1",
                     "border",
                     "border-border",
+                    "flex",
+                    "items-center",
+                    "justify-center",
+                    "gap-2",
                     variants[variant],
                     sizes[size],
                     className

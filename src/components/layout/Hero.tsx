@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import { ArrowRightToLine } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -13,7 +14,7 @@ export default function Hero() {
                 style={{ backgroundColor: "var(--overlay-color)" }}
             />
 
-            <div className="z-10 max-w-5xl p-2 text-center text-white">
+            <div className="z-10 max-w-5xl p-2 text-center text-white space-y-10">
                 <h1 className="text-8xl">Great Food. Great Company.</h1>
                 <h2 className="text-2xl text-off-white">
                     Casual elegant dining at The Moronero.
@@ -21,9 +22,20 @@ export default function Hero() {
                     Come as you are, leave happy.
                 </h2>
 
-                <div className="flex gap-32 mt-3 justify-center">
-                    <Button text="See full menu" />
-                    <Button text="About us" variant="secondary" />
+                <div className="flex gap-72 mt-3 justify-center">
+                    <Button
+                        text="See full menu"
+                        size="lg"
+                        variant="empty"
+                        icon={<ArrowRightToLine />}
+                        className="border border-off-white p-2"
+                    />
+                    <Button
+                        text="About us"
+                        size="lg"
+                        variant="empty"
+                        className="border border-off-white p-2"
+                    />
                 </div>
             </div>
 
