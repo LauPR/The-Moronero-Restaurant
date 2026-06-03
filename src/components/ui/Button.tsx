@@ -5,12 +5,12 @@ type ButtonProps = {
     icon?: React.ReactNode;
     variant?: 'primary' | 'secondary';
     size?: 'sm' | 'md' | 'lg';
-    classname?: React.ReactNode;
+    className?: React.ReactNode;
     onClick?: () => void;
 }
 
 export default function Button(
-    { text, icon, variant = 'primary', size = 'md', classname, onClick }: ButtonProps
+    { text, icon, variant = 'primary', size = 'md', className, onClick }: ButtonProps
 ) {
 
     const variants = {
@@ -33,9 +33,9 @@ export default function Button(
                     "p-1",
                     "border",
                     "border-border",
-                    classname,
                     variants[variant],
-                    sizes[size]
+                    sizes[size],
+                    className
                 )}
                 onClick={onClick}
             >
