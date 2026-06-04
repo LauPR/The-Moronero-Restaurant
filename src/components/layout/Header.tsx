@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ThemeToggle from "../ui/ThemeToggle";
+import Button from "../ui/Button";
 
 export default function Header() {
     return (
@@ -19,8 +20,38 @@ export default function Header() {
                     <h2 className="font-bold">The Moronero Restaurant</h2>
                 </div>
 
-                <div className="flex items-center">
-                    <ThemeToggle/>
+                <div className="flex items-center space-x-9">
+                    <Button
+                        text="Featured Dishes"
+                        size="sm"
+                        variant="empty"
+                        className="border-none"
+                    />
+                    <Button
+                        text="Full Menu"
+                        size="sm"
+                        variant="empty"
+                        className="border-none"
+                    />
+                    <Button
+                        text="Gallery"
+                        size="sm"
+                        variant="empty"
+                        className="border-none"
+                    />
+                    <Button
+                        text="Contact"
+                        size="sm"
+                        variant="empty"
+                        className="border-none"
+                    />
+                    <Button
+                        text="About Us"
+                        size="sm"
+                        variant="empty"
+                        className="border-none"
+                    />
+                    <ThemeToggle />
                 </div>
 
             </div>

@@ -28,13 +28,13 @@ export default function Hero() {
                         size="lg"
                         variant="empty"
                         icon={<ArrowRightToLine />}
-                        className="border border-off-white p-2"
+                        className="border-2 border-off-white shadow-sm shadow-shadow rounded-full p-3"
                     />
                     <Button
                         text="About us"
                         size="lg"
                         variant="empty"
-                        className="border border-off-white p-2"
+                        className="border-2 border-off-white shadow-sm shadow-shadow rounded-full p-3"
                     />
                 </div>
             </div>

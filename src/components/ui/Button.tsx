@@ -16,7 +16,7 @@ export default function Button(
     const variants = {
         primary: "bg-accent hover:bg-hover-accent",
         secondary: "bg-wood hover:bg-hover-wood",
-        empty: ""
+        empty: "transition hover:text-off-white hover:shadow-none duration-300 ease-in-out"
     }
 
     const sizes = {
