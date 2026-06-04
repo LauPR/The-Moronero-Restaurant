@@ -17,9 +17,9 @@ export default function Hero() {
             <div className="z-10 max-w-5xl p-2 text-center text-white space-y-10">
                 <h1 className="text-8xl">Great Food. Great Company.</h1>
                 <h2 className="text-2xl text-off-white">
-                    Casual elegant dining at The Moronero.
-                    Starters, mains, desserts, and drinks for the whole family.
-                    Come as you are, leave happy.
+                    Casual elegant dining for the whole family.
+                    Starters, mains, desserts, and drinks.
+                    Made with care and served with a smile.
                 </h2>
 
                 <div className="flex gap-72 mt-3 justify-center">

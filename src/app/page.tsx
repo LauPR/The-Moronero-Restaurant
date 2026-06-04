@@ -14,6 +14,7 @@ export default function Home() {
           flex-col
           bg-bg-primary 
           text-text-primary
+          cursor-default
         ">
 
         <Header />
