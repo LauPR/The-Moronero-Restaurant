@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ThemeToggle from "../ui/ThemeToggle";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -45,12 +46,16 @@ export default function Header() {
                         variant="empty"
                         className="border-none"
                     />
-                    <Button
-                        text="About Us"
-                        size="sm"
-                        variant="empty"
-                        className="border-none"
-                    />
+
+                    {/* About Us */}
+                    <Link href="/about">
+                        <Button
+                            text="About Us"
+                            size="sm"
+                            variant="empty"
+                            className="border-none"
+                        />
+                    </Link>
                     <ThemeToggle />
                 </div>
 
