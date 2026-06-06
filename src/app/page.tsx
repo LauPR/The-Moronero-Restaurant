@@ -27,7 +27,7 @@ export default function Home() {
         <Header />
 
         <Hero>
-          <div className="p-2 text-center">
+          <div className="p-2 text-center space-y-10">
             <h1 className="text-8xl">Great Food. Great Company.</h1>
             <h2 className="text-2xl text-off-white">
               Casual elegant dining for the whole family.
