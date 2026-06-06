@@ -3,7 +3,11 @@ import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
 import Button from "@/components/ui/Button";
 import { ArrowRightToLine } from "lucide-react";
-import Link from "next/link";
+
+const buttonItems = [
+  { name: 'See full menu', href: '/menu', icon: <ArrowRightToLine /> },
+  { name: 'About us', href: '/about' }
+]
 
 export default function Home() {
 
@@ -21,6 +25,7 @@ export default function Home() {
         ">
 
         <Header />
+
         <Hero>
           <div className="p-2 text-center">
             <h1 className="text-8xl">Great Food. Great Company.</h1>
@@ -31,25 +36,23 @@ export default function Home() {
             </h2>
 
             <div className="flex gap-72 mt-3 justify-center">
-              <Button
-                text="See full menu"
-                size="lg"
-                variant="empty"
-                icon={<ArrowRightToLine />}
-                className="border-2 border-off-white shadow-sm shadow-shadow rounded-full p-3"
-              />
-
-              <Link href="/about">
-                <Button
-                  text="About us"
-                  size="lg"
-                  variant="empty"
-                  className="border-2 border-off-white shadow-sm shadow-shadow rounded-full p-3"
-                />
-              </Link>
+              {buttonItems.map((item) => {
+                return (
+                  <Button
+                    key={item.href}
+                    href={item.href}
+                    text={item.name}
+                    icon={item.icon}
+                    variant="empty"
+                    size="lg"
+                    className="border-2 border-off-white shadow-sm shadow-shadow rounded-full p-3"
+                  />
+                )
+              })}
             </div>
           </div>
         </Hero>
+
         <Footer />
 
       </main>

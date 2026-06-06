@@ -1,9 +1,22 @@
+'use client'
+
 import Image from "next/image";
 import ThemeToggle from "../ui/ThemeToggle";
 import Button from "../ui/Button";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Featured Dishes', href: '/featured' },
+    { name: 'Full Menu', href: '/menu' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'About Us', href: '/about' }
+]
 
 export default function Header() {
+    const pathname = usePathname();
+
     return (
         <header
             className="bg-bg-secondary">
@@ -21,43 +34,22 @@ export default function Header() {
                     <h2 className="font-bold">The Moronero Restaurant</h2>
                 </div>
 
-                <div className="flex items-center space-x-9">
-                    <Button
-                        text="Featured Dishes"
-                        size="sm"
-                        variant="empty"
-                        className="border-none"
-                    />
-                    <Button
-                        text="Full Menu"
-                        size="sm"
-                        variant="empty"
-                        className="border-none"
-                    />
-                    <Button
-                        text="Gallery"
-                        size="sm"
-                        variant="empty"
-                        className="border-none"
-                    />
-                    <Button
-                        text="Contact"
-                        size="sm"
-                        variant="empty"
-                        className="border-none"
-                    />
+                <nav className="flex items-center space-x-9">
+                    {navItems.map((item) => {
+                        const isActive = pathname === item.href;
+                        return (
+                            <Button
+                                key={item.href}
+                                href={item.href}
+                                text={item.name}
+                                variant={isActive ? 'active' : 'empty'}
+                                size="sm"
+                            />
+                        )
+                    })}
 
-                    {/* About Us */}
-                    <Link href="/about">
-                        <Button
-                            text="About Us"
-                            size="sm"
-                            variant="empty"
-                            className="border-none"
-                        />
-                    </Link>
                     <ThemeToggle />
-                </div>
+                </nav>
 
             </div>
 
