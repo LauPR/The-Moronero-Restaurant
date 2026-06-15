@@ -1,6 +1,3 @@
-import Button from "../ui/Button";
-import Link from "next/link";
-import { ArrowRightToLine } from 'lucide-react';
 
 type HeroProps = {
  children: React.ReactNode;
